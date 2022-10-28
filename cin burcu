@@ -1,0 +1,36 @@
+package Ders01;
+import java.util.Scanner;
+public class cinburcu {
+    public static void main(String[] args) {
+
+        int dogumTarihi;
+        int kalan;
+
+
+        Scanner scan1 = new Scanner(System.in);
+        System.out.println("Doğum tarihinizi giriniz:");
+        dogumTarihi = scan1.nextInt();
+        kalan = (dogumTarihi % 12);
+
+        switch (kalan) {
+            case 0 :
+                System.out.println("Burcunuz Maymun");
+            break;
+            case 1:
+                System.out.println("Burcunuz Horoz");
+                break;
+            case 2:
+                System.out.println("Burcunuz Köpek");
+                break;
+            case 3:
+                System.out.println("Burcunuz Domuz");
+                break;
+            case 4:
+                System.out.println("Burcunuz Fare");
+                break;
+            case 10:
+                System.out.println("Burcunuz at ");
+        }
+
+    }
+}
